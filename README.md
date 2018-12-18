@@ -457,3 +457,7 @@ In this particular case, the code doesn't crash anymore because I used the simul
 to debug it.  It turns out the rv algorithm ( the line of forth that the simulator
 helped me debug) didn't do what I thought it would, but I didn't realize that
 until I could keep it from crashing, which the simulator helped me do.
+
+In any case, the results of the simulator are functionally equivalent to the
+non-simulated code, so if it works on the simulator, it will work on the 
+non-simulated code too.
