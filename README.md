@@ -448,10 +448,15 @@ Stack: [1 ] 42  TOS: 0  *>
 
 The outcome is the same as if I run the original, non-simulated code:
 
-: rv 0 5 6 7 8 0 >R begin dup 0<> while >R repeat begin R> dup 0= until drop ;  ok.
+: rv 0 5 6 7 8 0 >R begin dup 0<> while >R repeat begin R> dup 0= until drop ;  
+
+ok.
+
 rv  ok.
+
 .s Stack: [5 ] 42 0 5 6 7  TOS: 8  *>
- ok.
+
+ok.
 
 In this particular case, the code doesn't crash anymore because I used the simulator 
 to debug it.  It turns out the rv algorithm ( the line of forth that the simulator
