@@ -3,6 +3,7 @@ A stack simulator used for debugging code that causes stack crashes
 
 The way it works is this: you take the problematic line of forth code, 
 such as:
+
 : rv 0 5 6 7 8 0 >R begin dup 0<> while >R repeat begin R> dup 0= until drop ;
 
 and convert it into the stack simulator, which won't actually crash your
